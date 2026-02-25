@@ -1,16 +1,12 @@
 FROM python:3.11-slim
 
-# Install Playwright system dependencies
-RUN apt-get update && apt-get install -y \
-    libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 \
-    libxdamage1 libxrandr2 libgbm1 libpango-1.0-0 \
-    libcairo2 libasound2 libatspi2.0-0 libxshmfence1 \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Python dependencies
+# Install Python dependencies first so Playwright is available
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Install Playwright browsers and dependencies
 RUN playwright install chromium
+RUN playwright install-deps chromium
 
 # Copy agent code
 COPY qa_agent/ /app/qa_agent/
