@@ -1,0 +1,487 @@
+{
+  "url": "https://info.berwickwaters.com.au/",
+  "timestamp": "2026-02-25T11:52:59.393797",
+  "summary": {
+    "total": 57,
+    "passed": 29,
+    "failed": 4,
+    "warnings": 11,
+    "skipped": 13,
+    "pass_rate": "51%",
+    "by_category": {
+      "copywriter": {
+        "total": 9,
+        "passed": 5,
+        "failed": 0
+      },
+      "designer": {
+        "total": 11,
+        "passed": 7,
+        "failed": 0
+      },
+      "developer": {
+        "total": 37,
+        "passed": 17,
+        "failed": 4
+      }
+    }
+  },
+  "results": [
+    {
+      "check_id": "correct_group",
+      "name": "Landing page in correct Unbounce group",
+      "category": "developer",
+      "status": "warn",
+      "message": "Unbounce detected \u2014 verify group assignment manually in Unbounce dashboard.",
+      "evidence": "unbounce"
+    },
+    {
+      "check_id": "new_variant",
+      "name": "Updates on new variant",
+      "category": "developer",
+      "status": "skip",
+      "message": "Manual check: confirm this update was done on a new variant in Unbounce, not the live original.",
+      "evidence": null
+    },
+    {
+      "check_id": "fonts_match",
+      "name": "Fonts match design",
+      "category": "developer",
+      "status": "pass",
+      "message": "Custom fonts loaded: Cadiz, Open Sans, Synthese, ArialMT. Verify these match the Figma spec.",
+      "evidence": "All fonts: Cadiz, sans-serif, Arial, arial, Open Sans, Synthese, ArialMT"
+    },
+    {
+      "check_id": "images_match",
+      "name": "Images match design (broken image check)",
+      "category": "developer",
+      "status": "fail",
+      "message": "8 broken image(s) detected (0 natural width).",
+      "evidence": "https://info.berwickwaters.com.au/\nhttps://info.berwickwaters.com.au/\nhttps://info.berwickwaters.com.au/\nhttps://info.berwickwaters.com.au/\nhttps://info.berwickwaters.com.au/"
+    },
+    {
+      "check_id": "image_formats",
+      "name": "Image format optimisation",
+      "category": "developer",
+      "status": "pass",
+      "message": "Image formats OK. 5 modern format(s) detected out of 135 total.",
+      "evidence": null
+    },
+    {
+      "check_id": "sticky_cta_mobile",
+      "name": "Sticky CTA on mobile",
+      "category": "developer",
+      "status": "warn",
+      "message": "Sticky elements found (1) but none look like a CTA. Manual verification needed.",
+      "evidence": "Download Brochure"
+    },
+    {
+      "check_id": "sticky_cta_text",
+      "name": "Sticky CTA text matches brief",
+      "category": "developer",
+      "status": "pass",
+      "message": "Expected CTA text 'Download Brochure' found in sticky elements.",
+      "evidence": null
+    },
+    {
+      "check_id": "price_updates",
+      "name": "Price consistency across sections",
+      "category": "developer",
+      "status": "skip",
+      "message": "Price validation requires brief context. Manual check: verify prices match across all page sections.",
+      "evidence": null
+    },
+    {
+      "check_id": "copy_matches",
+      "name": "Copy matches copy doc",
+      "category": "developer",
+      "status": "skip",
+      "message": "No copy doc URL provided. Provide copy_doc_url to enable automated comparison.",
+      "evidence": null
+    },
+    {
+      "check_id": "cta_scroll_target",
+      "name": "CTA scrolls to form",
+      "category": "developer",
+      "status": "warn",
+      "message": "No anchor-linked CTA buttons found. Manual check: verify CTAs scroll to form.",
+      "evidence": null
+    },
+    {
+      "check_id": "cta_hover_color",
+      "name": "CTA hover colour change",
+      "category": "developer",
+      "status": "warn",
+      "message": "CSS transitions detected on CTA elements \u2014 hover effect likely present. Visual verification recommended.",
+      "evidence": null
+    },
+    {
+      "check_id": "carousel_functioning",
+      "name": "Carousel functioning",
+      "category": "developer",
+      "status": "warn",
+      "message": "Carousel detected (carousel, slider, slick). Functionality requires interactive testing.",
+      "evidence": null
+    },
+    {
+      "check_id": "carousel_transition",
+      "name": "Carousel transition speed",
+      "category": "developer",
+      "status": "warn",
+      "message": "Carousel auto-transition settings detected. Verify speed meets requirements.",
+      "evidence": "speed/delay=2000ms"
+    },
+    {
+      "check_id": "form_fields",
+      "name": "Form fields present",
+      "category": "developer",
+      "status": "pass",
+      "message": "1 form(s) with 29 field(s) detected. Verify against brief.",
+      "evidence": "pageId (hidden)\npageVariant (hidden)\nfirst_name (text)\nlast_name (text)\nphone (tel)\npostcode (text)\nemail (email)\ntimeline_to_purchase (radio)\ntimeline_to_purchase (radio)\ntimeline_to_purchase (radio)\ntimeline_to_purchase (radio)\ntimeline_to_purchase (radio)\nsource (hidden)\nreferrer (hidden)\ntarget (hidden)"
+    },
+    {
+      "check_id": "field_names",
+      "name": "Standard field naming",
+      "category": "developer",
+      "status": "pass",
+      "message": "Field names appear to follow standard naming conventions.",
+      "evidence": null
+    },
+    {
+      "check_id": "form_id",
+      "name": "Form ID is lp-pom-form-42",
+      "category": "developer",
+      "status": "fail",
+      "message": "Expected form id='lp-pom-form-42' but found: ub_form_id",
+      "evidence": "Form IDs on page: ['ub_form_id']"
+    },
+    {
+      "check_id": "placeholder_styling",
+      "name": "Placeholder text styling",
+      "category": "developer",
+      "status": "pass",
+      "message": "Placeholder styling rules found in page CSS.",
+      "evidence": null
+    },
+    {
+      "check_id": "form_validation",
+      "name": "Form validation",
+      "category": "developer",
+      "status": "pass",
+      "message": "10 required field(s) with HTML validation. Desktop forms: 1, Mobile forms: 1. Full validation testing requires form submission (see lead_submission check).",
+      "evidence": null
+    },
+    {
+      "check_id": "form_values_clean",
+      "name": "Form values free of codes",
+      "category": "developer",
+      "status": "pass",
+      "message": "No code-like values found in form field defaults.",
+      "evidence": null
+    },
+    {
+      "check_id": "lead_submission",
+      "name": "Lead submission test",
+      "category": "developer",
+      "status": "skip",
+      "message": "Live form submission requires a test harness with known-good data. Enable with --test-submit flag once test data is configured.",
+      "evidence": null
+    },
+    {
+      "check_id": "sms_client_name",
+      "name": "SMS verification client name",
+      "category": "developer",
+      "status": "skip",
+      "message": "No SMS verification detected on page.",
+      "evidence": null
+    },
+    {
+      "check_id": "sms_verification",
+      "name": "SMS verification present",
+      "category": "developer",
+      "status": "skip",
+      "message": "No SMS verification elements detected.",
+      "evidence": null
+    },
+    {
+      "check_id": "redirect_thankyou",
+      "name": "Redirect to thank-you page",
+      "category": "developer",
+      "status": "skip",
+      "message": "Provide thank_you_url in context to enable redirect validation after form submission.",
+      "evidence": null
+    },
+    {
+      "check_id": "thankyou_redirect",
+      "name": "Thank-you \u2192 confirmation redirect",
+      "category": "developer",
+      "status": "skip",
+      "message": "Multi-step redirect chain testing requires sequential page navigation. Enable with --test-submit once form submission is configured.",
+      "evidence": null
+    },
+    {
+      "check_id": "uli_parameters",
+      "name": "URL parameter pass-through",
+      "category": "developer",
+      "status": "pass",
+      "message": "URL parameter handling detected in page scripts: utm_, uli, URLSearchParams",
+      "evidence": null
+    },
+    {
+      "check_id": "ux_testing",
+      "name": "Interactive elements UX",
+      "category": "developer",
+      "status": "pass",
+      "message": "14 links and 1 forms found. No dead links detected.",
+      "evidence": null
+    },
+    {
+      "check_id": "page_titles",
+      "name": "Page title set",
+      "category": "developer",
+      "status": "pass",
+      "message": "Title: 'Frasers Property - Berwick Waters'",
+      "evidence": null
+    },
+    {
+      "check_id": "console_errors",
+      "name": "No console errors",
+      "category": "developer",
+      "status": "fail",
+      "message": "13 console error(s) detected (excluding third-party noise).",
+      "evidence": "[error] Not allowed to load local resource: blob:https://app.unbounce.com/c37748d2-2ce5-4bc8-8496-059bd3b8ba\n[error] Not allowed to load local resource: blob:https://app.unbounce.com/eb61e4a1-855e-43c2-adf9-7a7dd9b8a8\n[error] Failed to load resource: the server responded with a status of 404 ()\n[error] Access to font at 'https://d2qakxn0oh6mu0.cloudfront.net/assets/fonts/Cadiz/Cadiz-Regular.woff2' fro\n[error] Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "check_id": "unused_scripts",
+      "name": "Script cleanup",
+      "category": "developer",
+      "status": "pass",
+      "message": "27 external + 21 inline scripts. Inline JS: 30,751 bytes.",
+      "evidence": null
+    },
+    {
+      "check_id": "urls_no_variant",
+      "name": "URL free of variant letter",
+      "category": "developer",
+      "status": "pass",
+      "message": "URL does not contain a variant letter suffix.",
+      "evidence": null
+    },
+    {
+      "check_id": "page_speed",
+      "name": "Page load speed < 4s",
+      "category": "developer",
+      "status": "fail",
+      "message": "Page load time 6391ms exceeds 4000ms threshold.",
+      "evidence": "load_time_ms=6391"
+    },
+    {
+      "check_id": "gtm_present",
+      "name": "GTM implemented",
+      "category": "developer",
+      "status": "pass",
+      "message": "Google Tag Manager detected. GTM script tag found; GTM network request detected; Container ID(s): GTM-PFK9CG9.",
+      "evidence": null
+    },
+    {
+      "check_id": "image_compression",
+      "name": "Image compression & sizing",
+      "category": "developer",
+      "status": "pass",
+      "message": "All 135 images within reasonable dimensions.",
+      "evidence": null
+    },
+    {
+      "check_id": "code_minification",
+      "name": "Code minification",
+      "category": "developer",
+      "status": "warn",
+      "message": "Inline CSS (136,344 chars) appears unminified (7488 newlines). Consider minifying.",
+      "evidence": null
+    },
+    {
+      "check_id": "server_compression",
+      "name": "Server compression (Gzip/Brotli)",
+      "category": "developer",
+      "status": "pass",
+      "message": "Gzip compression enabled. Consider upgrading to Brotli for better compression.",
+      "evidence": null
+    },
+    {
+      "check_id": "footer_legal_links",
+      "name": "Footer legal links (T&C, Privacy, Disclaimer)",
+      "category": "developer",
+      "status": "warn",
+      "message": "Missing footer link(s): disclaimer.",
+      "evidence": "Found: {'terms': 'https://info.berwickwaters.com.au/clkn/https/www.frasersproperty.com.au/terms-an', 'privacy': 'https://info.berwickwaters.com.au/clkn/https/www.frasersproperty.com.au/privacy'}"
+    },
+    {
+      "check_id": "cache_headers",
+      "name": "Caching & CDN",
+      "category": "developer",
+      "status": "pass",
+      "message": "CDN detected for static asset delivery. CDN-served assets detected; Main document returned status 200.",
+      "evidence": null
+    },
+    {
+      "check_id": "padding_spacing",
+      "name": "Padding & spacing consistency",
+      "category": "designer",
+      "status": "skip",
+      "message": "Padding/spacing validation requires Figma design token comparison. Visual review against Figma spec recommended. (Figma API integration: Phase 2)",
+      "evidence": null
+    },
+    {
+      "check_id": "fonts_correct",
+      "name": "Fonts loaded correctly",
+      "category": "designer",
+      "status": "pass",
+      "message": "Web fonts loaded: Cadiz, Open Sans, Synthese, ArialMT",
+      "evidence": null
+    },
+    {
+      "check_id": "button_links",
+      "name": "Button links valid",
+      "category": "designer",
+      "status": "pass",
+      "message": "All 14 links have non-empty href targets.",
+      "evidence": null
+    },
+    {
+      "check_id": "scroll_animations",
+      "name": "Scroll animations & transitions",
+      "category": "designer",
+      "status": "pass",
+      "message": "Animation/transition code detected: animation, transition, @keyframes, animate. Visual verification recommended.",
+      "evidence": null
+    },
+    {
+      "check_id": "designer_sticky_cta",
+      "name": "Sticky CTA visible on mobile",
+      "category": "designer",
+      "status": "pass",
+      "message": "Mobile sticky element(s) found: 1. First: \"Download Brochure\"",
+      "evidence": null
+    },
+    {
+      "check_id": "logo_no_link",
+      "name": "Logo does not link out",
+      "category": "designer",
+      "status": "pass",
+      "message": "No outbound logo link detected.",
+      "evidence": null
+    },
+    {
+      "check_id": "desktop_mobile_parity",
+      "name": "Desktop/mobile parity",
+      "category": "designer",
+      "status": "pass",
+      "message": "Desktop and mobile structurally consistent (images: 135/135, forms: 1/1).",
+      "evidence": null
+    },
+    {
+      "check_id": "image_quality",
+      "name": "Image quality (no stretching)",
+      "category": "designer",
+      "status": "warn",
+      "message": "15 image(s) may be stretched or heavily resized.",
+      "evidence": "https://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. \u2014 natural:750px, displayed:375px\nhttps://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. \u2014 natural:1252px, displayed:613px\nhttps://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. \u2014 natural:1240px, displayed:621px\nhttps://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. \u2014 natural:1240px, displayed:621px\nhttps://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. \u2014 natural:1240px, displayed:621px"
+    },
+    {
+      "check_id": "color_contrast",
+      "name": "Colour contrast & mobile font size",
+      "category": "designer",
+      "status": "skip",
+      "message": "Full WCAG contrast analysis requires pixel-level inspection. Recommend running Lighthouse accessibility audit for automated contrast scoring.",
+      "evidence": null
+    },
+    {
+      "check_id": "responsive_images",
+      "name": "Responsive images",
+      "category": "designer",
+      "status": "pass",
+      "message": "Responsive image handling detected: srcset",
+      "evidence": null
+    },
+    {
+      "check_id": "visual_hierarchy",
+      "name": "Visual hierarchy & UX flow",
+      "category": "designer",
+      "status": "skip",
+      "message": "Visual hierarchy assessment requires human review against the approved design comp.",
+      "evidence": null
+    },
+    {
+      "check_id": "desktop_mobile_copy",
+      "name": "Desktop/mobile copy parity",
+      "category": "copywriter",
+      "status": "pass",
+      "message": "Desktop and mobile link structures are consistent. Visual copy check recommended for hidden sections.",
+      "evidence": null
+    },
+    {
+      "check_id": "spelling_grammar",
+      "name": "Spelling & grammar",
+      "category": "copywriter",
+      "status": "pass",
+      "message": "No obvious spelling/grammar issues detected. Manual proofread recommended.",
+      "evidence": null
+    },
+    {
+      "check_id": "capitalisation",
+      "name": "Capitalisation consistency",
+      "category": "copywriter",
+      "status": "warn",
+      "message": "Mixed capitalisation: 9 Title Case headings, 16 sentence case. Pick one style and apply consistently.",
+      "evidence": "  Waterside living in Clyde North&nbsp;\n  The pride of the south-east\n  It's not one thing, it's everything\n  100 years of creating proud communities\n  Explore more of Berwick Waters\n  Outdoor lifestyle"
+    },
+    {
+      "check_id": "accessibility_copy",
+      "name": "Accessibility (font size & contrast)",
+      "category": "copywriter",
+      "status": "skip",
+      "message": "Full accessibility audit (WCAG AA contrast ratios, min font sizes) requires Lighthouse or axe-core integration. Recommended for Phase 2.",
+      "evidence": null
+    },
+    {
+      "check_id": "meta_title",
+      "name": "Meta page title",
+      "category": "copywriter",
+      "status": "pass",
+      "message": "Title: \"Frasers Property - Berwick Waters\" (33 chars). No OG meta title set.",
+      "evidence": null
+    },
+    {
+      "check_id": "ux_copy",
+      "name": "UX copy & CTA clarity",
+      "category": "copywriter",
+      "status": "pass",
+      "message": "CTA text appears clear and specific: Download Brochure, Download Brochure, Download Brochure",
+      "evidence": null
+    },
+    {
+      "check_id": "cro_vault",
+      "name": "CRO vault entry",
+      "category": "copywriter",
+      "status": "skip",
+      "message": "CRO vault update is a manual process. Reminder: add this page to the CRO vault landing page tracker spreadsheet.",
+      "evidence": null
+    },
+    {
+      "check_id": "cta_clarity",
+      "name": "CTA copy variety",
+      "category": "copywriter",
+      "status": "pass",
+      "message": "5 distinct CTA text(s) on page.",
+      "evidence": null
+    },
+    {
+      "check_id": "form_labels",
+      "name": "Form field labels",
+      "category": "copywriter",
+      "status": "warn",
+      "message": "19 field(s) have no label or placeholder text.",
+      "evidence": "pageId, pageVariant, source, referrer, target"
+    }
+  ]
+}

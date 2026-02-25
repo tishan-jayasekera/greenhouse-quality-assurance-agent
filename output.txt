@@ -1,0 +1,166 @@
+/opt/anaconda3/lib/python3.13/site-packages/asana/client.py:156: UserWarning: This request is affected by the "new_user_task_lists" deprecation. Please visit this url for more info: https://forum.asana.com/t/update-on-our-planned-api-changes-to-user-task-lists-a-k-a-my-tasks/103828
+Adding "new_user_task_lists" to your "Asana-Enable" or "Asana-Disable" header will opt in/out to this deprecation and suppress this warning.
+  warnings.warn(message)
+
+🔍 Crawling https://info.berwickwaters.com.au/ ...
+   Page loaded in 6391ms | Status: 200
+   Images: 135 | Forms: 1 | Scripts: 48 | Console errors: 13
+
+🧪 Running checks ...
+
+======================================================================
+  QA REPORT — https://info.berwickwaters.com.au/
+  2026-02-25 11:52
+======================================================================
+
+  TOTAL: 57  |  ✅ 29  ❌ 4  ⚠️ 11  ⏭️ 13
+  Pass rate: 51%
+
+  ── COPYWRITER (9 checks) ──
+    ✅ [92mDesktop/mobile copy parity[0m
+       Desktop and mobile link structures are consistent. Visual copy check recommended for hidden sections.
+    ✅ [92mSpelling & grammar[0m
+       No obvious spelling/grammar issues detected. Manual proofread recommended.
+    ⚠️ [93mCapitalisation consistency[0m
+       Mixed capitalisation: 9 Title Case headings, 16 sentence case. Pick one style and apply consistently.
+       →   Waterside living in Clyde North&nbsp;
+       →   The pride of the south-east
+       →   It's not one thing, it's everything
+    ⏭️ [90mAccessibility (font size & contrast)[0m
+       Full accessibility audit (WCAG AA contrast ratios, min font sizes) requires Lighthouse or axe-core integration. Recommen
+    ✅ [92mMeta page title[0m
+       Title: "Frasers Property - Berwick Waters" (33 chars). No OG meta title set.
+    ✅ [92mUX copy & CTA clarity[0m
+       CTA text appears clear and specific: Download Brochure, Download Brochure, Download Brochure
+    ⏭️ [90mCRO vault entry[0m
+       CRO vault update is a manual process. Reminder: add this page to the CRO vault landing page tracker spreadsheet.
+    ✅ [92mCTA copy variety[0m
+       5 distinct CTA text(s) on page.
+    ⚠️ [93mForm field labels[0m
+       19 field(s) have no label or placeholder text.
+       → pageId, pageVariant, source, referrer, target
+
+  ── DESIGNER (11 checks) ──
+    ⏭️ [90mPadding & spacing consistency[0m
+       Padding/spacing validation requires Figma design token comparison. Visual review against Figma spec recommended. (Figma 
+    ✅ [92mFonts loaded correctly[0m
+       Web fonts loaded: Cadiz, Open Sans, Synthese, ArialMT
+    ✅ [92mButton links valid[0m
+       All 14 links have non-empty href targets.
+    ✅ [92mScroll animations & transitions[0m
+       Animation/transition code detected: animation, transition, @keyframes, animate. Visual verification recommended.
+    ✅ [92mSticky CTA visible on mobile[0m
+       Mobile sticky element(s) found: 1. First: "Download Brochure"
+    ✅ [92mLogo does not link out[0m
+       No outbound logo link detected.
+    ✅ [92mDesktop/mobile parity[0m
+       Desktop and mobile structurally consistent (images: 135/135, forms: 1/1).
+    ⚠️ [93mImage quality (no stretching)[0m
+       15 image(s) may be stretched or heavily resized.
+       → https://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. — natural:750px, displayed:375px
+       → https://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. — natural:1252px, displayed:613px
+       → https://d9hhrg4mnvzow.cloudfront.net/info.berwickwaters.com. — natural:1240px, displayed:621px
+    ⏭️ [90mColour contrast & mobile font size[0m
+       Full WCAG contrast analysis requires pixel-level inspection. Recommend running Lighthouse accessibility audit for automa
+    ✅ [92mResponsive images[0m
+       Responsive image handling detected: srcset
+    ⏭️ [90mVisual hierarchy & UX flow[0m
+       Visual hierarchy assessment requires human review against the approved design comp.
+
+  ── DEVELOPER (37 checks) ──
+    ⚠️ [93mLanding page in correct Unbounce group[0m
+       Unbounce detected — verify group assignment manually in Unbounce dashboard.
+       → unbounce
+    ⏭️ [90mUpdates on new variant[0m
+       Manual check: confirm this update was done on a new variant in Unbounce, not the live original.
+    ✅ [92mFonts match design[0m
+       Custom fonts loaded: Cadiz, Open Sans, Synthese, ArialMT. Verify these match the Figma spec.
+    ❌ [91mImages match design (broken image check)[0m
+       8 broken image(s) detected (0 natural width).
+       → https://info.berwickwaters.com.au/
+       → https://info.berwickwaters.com.au/
+       → https://info.berwickwaters.com.au/
+    ✅ [92mImage format optimisation[0m
+       Image formats OK. 5 modern format(s) detected out of 135 total.
+    ⚠️ [93mSticky CTA on mobile[0m
+       Sticky elements found (1) but none look like a CTA. Manual verification needed.
+       → Download Brochure
+    ✅ [92mSticky CTA text matches brief[0m
+       Expected CTA text 'Download Brochure' found in sticky elements.
+    ⏭️ [90mPrice consistency across sections[0m
+       Price validation requires brief context. Manual check: verify prices match across all page sections.
+    ⏭️ [90mCopy matches copy doc[0m
+       No copy doc URL provided. Provide copy_doc_url to enable automated comparison.
+    ⚠️ [93mCTA scrolls to form[0m
+       No anchor-linked CTA buttons found. Manual check: verify CTAs scroll to form.
+    ⚠️ [93mCTA hover colour change[0m
+       CSS transitions detected on CTA elements — hover effect likely present. Visual verification recommended.
+    ⚠️ [93mCarousel functioning[0m
+       Carousel detected (carousel, slider, slick). Functionality requires interactive testing.
+    ⚠️ [93mCarousel transition speed[0m
+       Carousel auto-transition settings detected. Verify speed meets requirements.
+       → speed/delay=2000ms
+    ✅ [92mForm fields present[0m
+       1 form(s) with 29 field(s) detected. Verify against brief.
+    ✅ [92mStandard field naming[0m
+       Field names appear to follow standard naming conventions.
+    ❌ [91mForm ID is lp-pom-form-42[0m
+       Expected form id='lp-pom-form-42' but found: ub_form_id
+       → Form IDs on page: ['ub_form_id']
+    ✅ [92mPlaceholder text styling[0m
+       Placeholder styling rules found in page CSS.
+    ✅ [92mForm validation[0m
+       10 required field(s) with HTML validation. Desktop forms: 1, Mobile forms: 1. Full validation testing requires form subm
+    ✅ [92mForm values free of codes[0m
+       No code-like values found in form field defaults.
+    ⏭️ [90mLead submission test[0m
+       Live form submission requires a test harness with known-good data. Enable with --test-submit flag once test data is conf
+    ⏭️ [90mSMS verification client name[0m
+       No SMS verification detected on page.
+    ⏭️ [90mSMS verification present[0m
+       No SMS verification elements detected.
+    ⏭️ [90mRedirect to thank-you page[0m
+       Provide thank_you_url in context to enable redirect validation after form submission.
+    ⏭️ [90mThank-you → confirmation redirect[0m
+       Multi-step redirect chain testing requires sequential page navigation. Enable with --test-submit once form submission is
+    ✅ [92mURL parameter pass-through[0m
+       URL parameter handling detected in page scripts: utm_, uli, URLSearchParams
+    ✅ [92mInteractive elements UX[0m
+       14 links and 1 forms found. No dead links detected.
+    ✅ [92mPage title set[0m
+       Title: 'Frasers Property - Berwick Waters'
+    ❌ [91mNo console errors[0m
+       13 console error(s) detected (excluding third-party noise).
+       → [error] Not allowed to load local resource: blob:https://app.unbounce.com/c37748d2-2ce5-4bc8-8496-05
+       → [error] Not allowed to load local resource: blob:https://app.unbounce.com/eb61e4a1-855e-43c2-adf9-7a
+       → [error] Failed to load resource: the server responded with a status of 404 ()
+    ✅ [92mScript cleanup[0m
+       27 external + 21 inline scripts. Inline JS: 30,751 bytes.
+    ✅ [92mURL free of variant letter[0m
+       URL does not contain a variant letter suffix.
+    ❌ [91mPage load speed < 4s[0m
+       Page load time 6391ms exceeds 4000ms threshold.
+       → load_time_ms=6391
+    ✅ [92mGTM implemented[0m
+       Google Tag Manager detected. GTM script tag found; GTM network request detected; Container ID(s): GTM-PFK9CG9.
+    ✅ [92mImage compression & sizing[0m
+       All 135 images within reasonable dimensions.
+    ⚠️ [93mCode minification[0m
+       Inline CSS (136,344 chars) appears unminified (7488 newlines). Consider minifying.
+    ✅ [92mServer compression (Gzip/Brotli)[0m
+       Gzip compression enabled. Consider upgrading to Brotli for better compression.
+    ⚠️ [93mFooter legal links (T&C, Privacy, Disclaimer)[0m
+       Missing footer link(s): disclaimer.
+       → Found: {'terms': 'https://info.berwickwaters.com.au/clkn/https/www.frasersproperty.com.au/terms-an',
+    ✅ [92mCaching & CDN[0m
+       CDN detected for static asset delivery. CDN-served assets detected; Main document returned status 200.
+
+  🚨 FAILURES REQUIRING ACTION:
+    ❌ [developer] Images match design (broken image check): 8 broken image(s) detected (0 natural width).
+    ❌ [developer] Form ID is lp-pom-form-42: Expected form id='lp-pom-form-42' but found: ub_form_id
+    ❌ [developer] No console errors: 13 console error(s) detected (excluding third-party noise).
+    ❌ [developer] Page load speed < 4s: Page load time 6391ms exceeds 4000ms threshold.
+
+📄 Report saved: qa_output/qa_report_20260225_115259.md
+📊 JSON results: qa_output/qa_results_20260225_115259.json
+✅ Posted to Asana task comment: 1213428006764600

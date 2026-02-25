@@ -1,0 +1,13 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8502
+  Network URL: http://192.168.1.171:8502
+  External URL: http://27.32.157.10:8502
+
+/opt/anaconda3/lib/python3.13/site-packages/asana/client.py:156: UserWarning: This request is affected by the "new_user_task_lists" deprecation. Please visit this url for more info: https://forum.asana.com/t/update-on-our-planned-api-changes-to-user-task-lists-a-k-a-my-tasks/103828
+Adding "new_user_task_lists" to your "Asana-Enable" or "Asana-Disable" header will opt in/out to this deprecation and suppress this warning.
+  warnings.warn(message)
+/opt/anaconda3/lib/python3.13/site-packages/asana/client.py:156: UserWarning: This request is affected by the "new_user_task_lists" deprecation. Please visit this url for more info: https://forum.asana.com/t/update-on-our-planned-api-changes-to-user-task-lists-a-k-a-my-tasks/103828
+Adding "new_user_task_lists" to your "Asana-Enable" or "Asana-Disable" header will opt in/out to this deprecation and suppress this warning.
+  warnings.warn(message)
