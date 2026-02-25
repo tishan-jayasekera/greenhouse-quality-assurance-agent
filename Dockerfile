@@ -15,6 +15,7 @@ RUN playwright install chromium
 # Copy agent code
 COPY qa_agent/ /app/qa_agent/
 COPY tests/ /app/tests/
+COPY app.py /app/
 WORKDIR /app
 
 # Expose Render's default expected port
