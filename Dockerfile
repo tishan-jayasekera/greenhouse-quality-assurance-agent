@@ -22,5 +22,5 @@ WORKDIR /app
 EXPOSE 10000
 
 # Entry point for the Streamlit Web UI
-# We tell Streamlit to run headlessly, bind to all interfaces (0.0.0.0), and listen on 10000
-CMD ["streamlit", "run", "app.py", "--server.port=10000", "--server.address=0.0.0.0", "--server.headless=true"]
+# We tell Streamlit to run headlessly, bind to all interfaces (0.0.0.0), and listen on $PORT
+CMD sh -c "streamlit run app.py --server.port=${PORT:-10000} --server.address=0.0.0.0 --server.headless=true"
